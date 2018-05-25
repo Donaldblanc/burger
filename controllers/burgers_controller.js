@@ -1,9 +1,8 @@
-//import express from "express"
+import express from "express"
+import burgers from "../models/burger.js"
 
-//import burgers from "../models/burger.js"
-
-const express = require("express")
-const burgers = require('../models/burger.js')
+// const express = require("express")
+// const burgers = require('../models/burger.js')
 
 const router = express.Router();
 
@@ -20,4 +19,5 @@ router.get("/", (request, response) =>{
 
 });
 
-module.exports = router;
+export default router; 
+//module.exports = router;

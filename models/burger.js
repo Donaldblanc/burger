@@ -1,6 +1,6 @@
-//import orm from "../config/orm.js"
+import orm from "../config/orm.js"
 
-const orm = require ('../config/orm.js')
+// const orm = require ('../config/orm.js')
 
 let burger = {
     all: function(cbFunc){
@@ -12,5 +12,5 @@ let burger = {
 
 };
 
-
-module.exports = burger;
+export default burger;
+//module.exports = burger;
