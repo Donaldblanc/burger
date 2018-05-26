@@ -7,6 +7,12 @@ let burger = {
         orm.selectAll("burgers", (results) =>{
             cbFunc(results);
         });
+    },
+    update: function(id, cbFunc){
+        orm.updateOne('burgers',id,cbFunc);
+    },
+    create: function(name, cbFunc) {
+        orm.insertOne("burgers", name, cbFunc);
     }
 
 
