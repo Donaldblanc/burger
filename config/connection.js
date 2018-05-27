@@ -2,7 +2,7 @@ import mysql from  "mysql";
 //  const mysql = require("mysql")
 
 if(process.env.JAWSDB_URL){
-    const connection = mysql.createConnection(proce.env.JAWSDB_URL)
+    const connection = mysql.createConnection(process.env.JAWSDB_URL)
 
 }else{
 
