@@ -1,6 +1,4 @@
 import express from 'express'
-
-
 import bodyParser from 'body-parser';
 import path from 'path';
 import routes from "./controllers/burgers_controller.js";
@@ -26,5 +24,5 @@ app.use(routes);
 app.listen(PORT, () =>{ 
     console.log(`Server listening on: http://localhost:${PORT} `);
 
-   });
+});
 

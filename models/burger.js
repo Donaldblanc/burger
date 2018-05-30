@@ -14,8 +14,6 @@ let burger = {
     create: function(name, cbFunc) {
         orm.insertOne("burgers", name, cbFunc);
     }
-
-
 };
 
 export default burger;
